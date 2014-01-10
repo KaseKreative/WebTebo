@@ -22,35 +22,7 @@
     <favorites_list name="WPF_Variables" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Day1_IntroVariables.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Day1_IntroVariables.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="26" selection-start="2847" selection-end="2847" vertical-scroll-proportion="0.0" vertical-offset="1620" max-vertical-offset="1875">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="43" selection-start="124" selection-end="124" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="240">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Day2_ArraysConditions.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Day2_ArraysConditions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="43" selection-end="43" vertical-scroll-proportion="0.020891365" vertical-offset="0" max-vertical-offset="718">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -61,8 +33,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/Day1_IntroVariables.js" />
-        <option value="$PROJECT_DIR$/Day2_ArraysConditions.js" />
         <option value="$PROJECT_DIR$/Index.html" />
+        <option value="$PROJECT_DIR$/Day2_ArraysConditions.js" />
       </list>
     </option>
   </component>
@@ -125,7 +97,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="SearchEverywhereHistory" value="&#10;=" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Day2_ArraysConditions.js" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -199,13 +171,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="17" y="22" width="1400" height="815" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -234,7 +206,14 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Day2_ArraysConditions.js</url>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Day1_IntroVariables.js">
@@ -251,23 +230,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day1_IntroVariables.js">
+    <entry file="file://$PROJECT_DIR$/Day2_ArraysConditions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="26" selection-start="2847" selection-end="2847" vertical-scroll-proportion="0.0" vertical-offset="1127" max-vertical-offset="1845">
+        <state line="194" column="28" selection-start="3897" selection-end="3897" vertical-scroll-proportion="0.81197774" vertical-offset="2327" max-vertical-offset="3045">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="43" selection-start="124" selection-end="124" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="240">
+        <state line="10" column="7" selection-start="192" selection-end="192" vertical-scroll-proportion="0.21613833" vertical-offset="0" max-vertical-offset="694">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Day2_ArraysConditions.js">
+    <entry file="file://$PROJECT_DIR$/Day1_IntroVariables.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="43" selection-end="43" vertical-scroll-proportion="0.020891365" vertical-offset="0" max-vertical-offset="718">
+        <state line="108" column="26" selection-start="2847" selection-end="2847" vertical-scroll-proportion="0.6448468" vertical-offset="1157" max-vertical-offset="1875">
           <folding />
         </state>
       </provider>
