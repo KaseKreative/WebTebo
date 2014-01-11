@@ -44,7 +44,7 @@
       <file leaf-file-name="Expressions_Worksheet.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/JavaScript/Expressions_Worksheet.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="24" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.52228415" vertical-offset="0" max-vertical-offset="718">
+            <state line="62" column="62" selection-start="2894" selection-end="2894" vertical-scroll-proportion="0.23404256" vertical-offset="735" max-vertical-offset="1440">
               <folding />
             </state>
           </provider>
@@ -53,7 +53,7 @@
       <file leaf-file-name="Day1_IntroVariables.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../WPF_Variables/Day1_IntroVariables.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="627" max-vertical-offset="1875">
+            <state line="43" column="0" selection-start="811" selection-end="873" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1875">
               <folding />
             </state>
           </provider>
@@ -75,8 +75,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="219" />
-    <option name="y" value="26" />
+    <option name="x" value="387" />
+    <option name="y" value="37" />
     <option name="width" value="1400" />
     <option name="height" value="815" />
   </component>
@@ -175,7 +175,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../WPF_Variables/Day1_IntroVariables.js" />
-    <property name="SearchEverywhereHistory" value="+" />
+    <property name="SearchEverywhereHistory" value="&#10;*&#10;va&#10;+" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
@@ -226,7 +226,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="219" y="26" width="1400" height="815" extended-state="0" />
+    <frame x="387" y="37" width="1400" height="815" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -265,9 +265,16 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Css/stylesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../WPF_Variables/Day1_IntroVariables.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1875">
+        <state line="43" column="0" selection-start="811" selection-end="873" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1875">
           <folding />
         </state>
       </provider>
@@ -279,16 +286,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Css/stylesheet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/JavaScript/Expressions_Worksheet.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="24" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.52228415" vertical-offset="0" max-vertical-offset="718">
+        <state line="62" column="62" selection-start="2894" selection-end="2894" vertical-scroll-proportion="0.23404256" vertical-offset="735" max-vertical-offset="1440">
           <folding />
         </state>
       </provider>
