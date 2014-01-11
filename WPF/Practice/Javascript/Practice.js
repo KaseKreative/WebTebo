@@ -58,3 +58,27 @@
 //                                                        console.log("Your grade is an F");
 //                                                    }}}}}}}
 //
+
+
+//Last Chance For Gas!
+
+//var mpg =parseInt(prompt("How many mpg does your car get?"));
+//var percentInTank =parseInt(prompt("What is your gas tank at? (In %)"));
+//var gasTankCapacity =parseInt(prompt("How many gallons of gas can the car hold?"));
+//var distance= parseInt(prompt("How far are you traveling?"));
+//
+//var decimalInTank=percentInTank/100;
+//
+//var totalInTank=gasTankCapacity*decimalInTank;
+//
+//console.log(totalInTank);
+//
+//var miles=totalInTank*mpg;
+//
+//console.log(miles);
+//
+//if (miles>distance){
+//   console.log("You have enough gas!")
+//}   else {
+//    console.log("You should stop and fill up first!");
+//}
