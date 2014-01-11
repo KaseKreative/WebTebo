@@ -16,6 +16,8 @@
 //}
 
 
+
+
 //Celsius to Fahrenheit converter
 
 //var Degrees =parseInt(prompt("What is the temperature?"));
@@ -28,6 +30,10 @@
 //}else {
 //    console.log("Incorrect Scale of Temperature")
 //}
+
+
+
+
 
 
 // Check The Login
@@ -51,24 +57,26 @@
 //}
 
 
-//Movie Ticket Price
-
-var TimeOfMovie=parseInt(prompt("Time of movie?"));
-var AgeOfCustomer=parseInt(prompt("Age?"));
-
-var Price="$12.00";
-var DiscountPrice="$7.00";
 
 
-if (AgeOfCustomer>=55 || AgeOfCustomer <=10){
-        console.log("The ticket price is" + " " + DiscountPrice);
-    } else {
-        if(TimeOfMovie>=3 && TimeOfMovie<=5){
-                console.log("The ticket price is" + " " + DiscountPrice);
-             } else {
-                console.log("The ticket price is" + " " + Price);
-        }
-}
+////Movie Ticket Price
+//
+//var TimeOfMovie=parseInt(prompt("Time of movie?"));
+//var AgeOfCustomer=parseInt(prompt("Age?"));
+//
+//var Price="$12.00";
+//var DiscountPrice="$7.00";
+//
+//
+//if (AgeOfCustomer>=55 || AgeOfCustomer <=10){
+//        console.log("The ticket price is" + " " + DiscountPrice);
+//    } else {
+//        if(TimeOfMovie>=3 && TimeOfMovie<=5){
+//                console.log("The ticket price is" + " " + DiscountPrice);
+//             } else {
+//                console.log("The ticket price is" + " " + Price);
+//        }
+//}
 
 
 
