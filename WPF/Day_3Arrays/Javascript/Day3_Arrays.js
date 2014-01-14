@@ -152,16 +152,20 @@ Game[9][9]="Dessert";
 //console.log(rowString);
 
 
+//Step through each element of the array Game and load the data into a
+// formatted string and display the values
 
 
 var rowString='';
 for(outerLoop=0;outerLoop<Game.length;outerLoop++){
-    for (innerLoop=0;innerLoop<Game.length;innerLoop++){
+    for (innerLoop=0;innerLoop<Game[outerLoop].length;innerLoop++){
         rowString=rowString+Game[outerLoop] [innerLoop];
         rowString=rowString+"\t";
     }
     rowString=rowString+"\n";
-
+       // rowString+="\n"; equals the same as ^
 }
 
 console.log(rowString);
+
+console.log(Math.random());
