@@ -19,7 +19,7 @@
 
 
 //Celsius to Fahrenheit converter
-
+//
 //var Degrees =parseInt(prompt("What is the temperature?"));
 //var ForC = prompt("F or C?");
 //
@@ -30,8 +30,8 @@
 //}else {
 //    console.log("Incorrect Scale of Temperature")
 //}
-
-
+//
+//
 
 
 
