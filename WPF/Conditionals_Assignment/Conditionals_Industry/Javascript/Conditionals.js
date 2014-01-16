@@ -3,8 +3,8 @@
  */
 
 
-var experience = parseInt(prompt("How many years of experience do you have?"));
-var jobTitle = prompt("What job title are you looking for?\n (Entry, Intermediate, Senior")
+ var experience = parseInt(prompt("How many years of experience do you have?"));
+var jobTitle =prompt("What job title are you looking for?\n (Entry, Intermediate, Senior")
 
 if ( jobTitle=="Entry"){
         console.log("Available");
