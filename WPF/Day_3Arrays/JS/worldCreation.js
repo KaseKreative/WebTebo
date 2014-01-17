@@ -14,7 +14,6 @@ Game[8]=[];
 Game[9]=[];
 
 
-
 Game[0][0]="water";
 Game[0][1]="water";
 Game[0][2]="water";
@@ -124,6 +123,4 @@ Game[9][6]="Dessert";
 Game[9][7]="Dessert";
 Game[9][8]="Dessert";
 Game[9][9]="Dessert";
-
-
 

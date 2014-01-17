@@ -6,7 +6,7 @@
     // Practicing Loops
 
 //for(loopItt=0;loopItt<Game.length;loopItt++){
-                // Doing modulus to figure out if the number the loop is on is negatie
+                // Doing modulus to figure out if the number the loop is on is negative
                 // Does this by noticing if there is 1 remainder or 0 remainders
 ////    if(loopItt%2 == 1 ){
 ////        console.log(loopItt);

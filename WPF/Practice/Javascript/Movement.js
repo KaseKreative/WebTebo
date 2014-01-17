@@ -1,3 +1,6 @@
+/**
+ * Created by KaseTebo on 1/16/14.
+ */
 
 
 
@@ -26,9 +29,9 @@ while(whileCondition== true){
             if (xx == outerLoop && yy == innerLoop){
                 rowString+= character+"\t";
             } else {
-            // Stringing it all together
-            rowString=rowString+Game[outerLoop] [innerLoop];
-            rowString=rowString+"\t";}
+                // Stringing it all together
+                rowString=rowString+Game[outerLoop] [innerLoop];
+                rowString=rowString+"\t";}
         }
         // Adding the break after the string
         rowString=rowString+"\n";
@@ -73,22 +76,4 @@ while(whileCondition== true){
         yy= Game.length-1;
     }
 
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-  //  console.log(Game[xx][yy]);                This allows us to check the specific values of the world.
-
-
-
