@@ -39,6 +39,9 @@ while(whileCondition== true){
 
     console.clear();
     console.log(rowString);
+    // This is recognizing if there is a monster on the square you land.
+    console.log (makeMonster(Game[xx][yy],Math.random()));
+
 
     var direction=prompt("What direction do you want to go? (Lowercase or End)");
 
@@ -79,14 +82,18 @@ while(whileCondition== true){
 
 
 
+//var Out = 5;
+// function addTwoValues(value1, value2){
+//     var addedValue = Value1+Value2;
+//     return addedValue;
+// }
+
+//function that takes in an array
 
 
-
-
-
-
-
-
+//function countArray(Game){
+//    return Game.length;
+//}
 
   //  console.log(Game[xx][yy]);                This allows us to check the specific values of the world.
 
