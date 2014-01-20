@@ -1,4 +1,5 @@
 
+var dungeon = []
 
 var Game=[];
 
@@ -65,7 +66,7 @@ Game[4][3]="Forest";
 Game[4][4]="Forest";
 Game[4][5]="Forest";
 Game[4][6]="Forest";
-Game[4][7]="Forest";
+Game[4][7]= "Dungeon"+ dungeon;
 Game[4][8]="Forest";
 Game[4][9]="Forest";
 

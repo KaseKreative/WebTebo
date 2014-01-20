@@ -38,6 +38,8 @@ while(whileCondition== true){
     // clears the console so that the grid doesn't stack on top of itself just replaces the old one.
 
     console.clear();
+    console.log("Character Name: "+name);
+    console.log("Class: "+ promptcharacterClass);
     // This is the map
     console.log(rowString);
 
