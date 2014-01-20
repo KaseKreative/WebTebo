@@ -38,10 +38,14 @@ while(whileCondition== true){
     // clears the console so that the grid doesn't stack on top of itself just replaces the old one.
 
     console.clear();
+    // This is the map
     console.log(rowString);
+
     // This is recognizing if there is a monster on the square you land.
     console.log (makeMonster(Game[xx][yy],Math.random()));
 
+    // Characters Stats
+    console.log(characterStats);
 
     var direction=prompt("What direction do you want to go? (Lowercase or End)");
 

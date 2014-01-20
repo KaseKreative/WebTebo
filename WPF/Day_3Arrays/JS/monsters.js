@@ -9,9 +9,9 @@ var randomNumber= Math.random();
 
 function makeMonster(landType, randomNumber){
 // Takes in land type and a random number and returns a monster. maybe.
-    var trollPercentage=.7;
-    var koboldPercentage= .5;
-    var mermanPercentage= .4;
+    var trollPercentage=.4;
+    var koboldPercentage= .3;
+    var mermanPercentage= .2;
 
     if (landType == "Forest" && randomNumber < trollPercentage){return "You have encountered a Troll"}
     if (landType == "Dessert" && randomNumber < koboldPercentage){return "You have encountered a Kobold"}
