@@ -14,8 +14,10 @@ var whileCondition= true;
 
 
 
+
 // While loop - Will loop until told not to.
 while(whileCondition== true){
+
     // Reassigning the rowString variable to 0
     rowString="";
     //looping the Y axis adding +1 every time up to the total length of the game
@@ -49,7 +51,7 @@ while(whileCondition== true){
     // Characters Stats
     console.log(characterStats);
 
-    var direction=prompt("What direction do you want to go? (Lowercase or End)");
+    var direction=prompt("What action do you want to make?"+ "\n" + "up, down, left, right" + "\n" + "Search, Enter, Attack, End").toLowerCase();
 
 
 
@@ -67,9 +69,16 @@ while(whileCondition== true){
                 if (direction == "right") {
                     yy++;
                 } else {
+                    if(direction == "enter"){
+                        if (Game[xx][yy] == Game[4][7]){
+                            console.clear();
+                            console.log(generateDungeon());
+                            whileCondition=false;
+                    }
+                    } else {
                     if (direction == "end"){
                         whileCondition = false;
-                    }}}}}
+                    }}}}}}
 
     // Setting it so if you go off the map it resets you to the other side.
     if (xx>= Game.length){

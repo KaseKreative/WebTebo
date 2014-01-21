@@ -29,7 +29,9 @@ var classMax= 12;
 
 
 var health= 100;
-var currentHealth=Math.floor(100*Math.random());
+var mana= 100;
+var currentHealth=Math.floor(health*Math.random());
+var currentMana= Math.floor(mana*Math.random());
 var experience=0;
 
 
@@ -64,6 +66,7 @@ if (characterClass == "mage"){
     characterSheet[cha]=Math.floor((max-min)*Math.random()+min);
     characterSheet[wis]=Math.floor((max-classMin)*Math.random()+classMin);
     characterSheet[int]=Math.floor((max-classMin)*Math.random()+classMin);
+     mana += Math.floor(characterSheet[int]*Math.random()+ characterSheet[int]);
 } else if (characterClass == "fighter"){
     characterSheet[str]=Math.floor((max-classMin)*Math.random()+classMin);
     characterSheet[dex]=Math.floor((max-min)*Math.random()+min);
@@ -71,7 +74,7 @@ if (characterClass == "mage"){
     characterSheet[cha]=Math.floor((max-min)*Math.random()+min);
     characterSheet[wis]=Math.floor((classMax-min)*Math.random()+min);
     characterSheet[int]=Math.floor((classMax-min)*Math.random()+min);
-    health = Math.floor(con*Math.random() + 100);
+    health += Math.floor(health*Math.random() + con);
 } else if (characterClass == "ranger") {
     characterSheet[str]=Math.floor((classMax-min)*Math.random()+min);
     characterSheet[dex]=Math.floor((max-classMin)*Math.random()+classMin);
@@ -81,10 +84,32 @@ if (characterClass == "mage"){
     characterSheet[int]=Math.floor((classMax-min)*Math.random()+min);
 }
 
-var characterStats =
-    "Str: " + characterSheet[str] + "\t \t" + "HP: " +currentHealth+"/"+health + "\n" +
-    "Dex: " + characterSheet[dex] + "\n" +
-    "Con: " + characterSheet[con] + "\t \t" + "Exp: " + experience + "\n" +
-    "Cha: " + characterSheet[cha] + "\n" +
-    "Wis: " + characterSheet[wis] + "\n" +
-    "Int: " + characterSheet[int] + "\n";
+
+
+
+
+
+// Current Mana
+
+
+
+
+
+    if (characterClass == "mage"){
+         characterStats =
+            "Str: " + characterSheet[str] + "\t \t" + "HP: " +currentHealth+"/"+health + "\n" +
+            "Dex: " + characterSheet[dex] + "\t \t" + "Mana: "+currentMana+"/"+mana+ "\n" +
+            "Con: " + characterSheet[con] + "\t \t" + "Exp: " + experience + "\n" +
+            "Cha: " + characterSheet[cha] + "\n" +
+            "Wis: " + characterSheet[wis] + "\n" +
+            "Int: " + characterSheet[int] + "\n" ;
+    } else {
+         characterStats =
+            "Str: " + characterSheet[str] + "\t \t" + "HP: " +currentHealth+"/"+health + "\n" +
+            "Dex: " + characterSheet[dex] + "\n" +
+            "Con: " + characterSheet[con] + "\t \t" + "Exp: " + experience + "\n" +
+            "Cha: " + characterSheet[cha] + "\n" +
+            "Wis: " + characterSheet[wis] + "\n" +
+            "Int: " + characterSheet[int] + "\n" ;
+
+    }

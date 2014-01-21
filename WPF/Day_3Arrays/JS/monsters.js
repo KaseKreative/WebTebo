@@ -9,14 +9,20 @@ var randomNumber= Math.random();
 
 function makeMonster(landType, randomNumber){
 // Takes in land type and a random number and returns a monster. maybe.
-    var trollPercentage=.4;
-    var koboldPercentage= .3;
-    var mermanPercentage= .2;
+    var trollPercentage=.2;
+    var koboldPercentage= .2;
+    var mermanPercentage= .1;
 
-    if (landType == "Forest" && randomNumber < trollPercentage){return "You have encountered a Troll"}
-    if (landType == "Dessert" && randomNumber < koboldPercentage){return "You have encountered a Kobold"}
-    if (landType == "water" && randomNumber < mermanPercentage){return "You have encountered a Merman"}
-    else {return "";}
+    if (landType == "Forest" && randomNumber < trollPercentage){
+        MonsterGen();
+return "You have encountered a " + monster[troll][type] + "\n" + "His damage is: " + monster[troll][dmg] +"\n" + "His health is: " + monster[troll][health]+ "\n"}
+    if (landType == "Dessert" && randomNumber < koboldPercentage){
+        MonsterGen();
+return "You have encountered a "+ monster[kobold][type] + "\n"+ "His damage is: " + monster[kobold][dmg] +"\n" + "His health is: " + monster[kobold][health]+ "\n"}
+    if (landType == "water" && randomNumber < mermanPercentage){
+        MonsterGen();
+return "You have encountered a "+ monster[merman][type] + "\n"+ "His damage is: " + monster[merman][dmg] +"\n" + "His health is: " + monster[merman][health]+ "\n"}
+    else { return "" ;}
 }
 
 

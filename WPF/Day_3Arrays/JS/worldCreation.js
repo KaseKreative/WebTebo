@@ -1,5 +1,5 @@
 
-var dungeon = []
+
 
 var Game=[];
 
@@ -66,7 +66,7 @@ Game[4][3]="Forest";
 Game[4][4]="Forest";
 Game[4][5]="Forest";
 Game[4][6]="Forest";
-Game[4][7]= "Dungeon"+ dungeon;
+Game[4][7]="Dungeon";
 Game[4][8]="Forest";
 Game[4][9]="Forest";
 
@@ -105,24 +105,24 @@ Game[7][9]="Forest";
 
 Game[8][0]="Forest";
 Game[8][1]="Forest";
-Game[8][2]="Dessert";
-Game[8][3]="Dessert";
-Game[8][4]="Dessert";
-Game[8][5]="Dessert";
-Game[8][6]="Dessert";
-Game[8][7]="Dessert";
-Game[8][8]="Dessert";
-Game[8][9]="Dessert";
+Game[8][2]="Desert";
+Game[8][3]="Desert";
+Game[8][4]="Desert";
+Game[8][5]="Desert";
+Game[8][6]="Desert";
+Game[8][7]="Desert";
+Game[8][8]="Desert";
+Game[8][9]="Desert";
 
-Game[9][0]="Dessert";
-Game[9][1]="Dessert";
-Game[9][2]="Dessert";
-Game[9][3]="Dessert";
-Game[9][4]="Dessert";
-Game[9][5]="Dessert";
-Game[9][6]="Dessert";
-Game[9][7]="Dessert";
-Game[9][8]="Dessert";
-Game[9][9]="Dessert";
+Game[9][0]="Desert";
+Game[9][1]="Desert";
+Game[9][2]="Desert";
+Game[9][3]="Desert";
+Game[9][4]="Desert";
+Game[9][5]="Desert";
+Game[9][6]="Desert";
+Game[9][7]="Desert";
+Game[9][8]="Desert";
+Game[9][9]="Desert";
 
 
