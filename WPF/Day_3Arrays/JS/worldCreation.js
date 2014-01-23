@@ -60,13 +60,13 @@ Game[3][8]="Forest";
 Game[3][9]="Forest";
 
 Game[4][0]="Forest";
-Game[4][1]="Forest";
+Game[4][1]="Dungeon";
 Game[4][2]="Forest";
 Game[4][3]="Forest";
 Game[4][4]="Forest";
 Game[4][5]="Forest";
 Game[4][6]="Forest";
-Game[4][7]="Dungeon";
+Game[4][7]="Forest";
 Game[4][8]="Forest";
 Game[4][9]="Forest";
 
@@ -104,7 +104,7 @@ Game[7][8]="Forest";
 Game[7][9]="Forest";
 
 Game[8][0]="Forest";
-Game[8][1]="Forest";
+Game[8][1]="Dungeon";
 Game[8][2]="Desert";
 Game[8][3]="Desert";
 Game[8][4]="Desert";

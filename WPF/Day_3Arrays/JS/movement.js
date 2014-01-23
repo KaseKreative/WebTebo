@@ -2,41 +2,44 @@
 
 
 // Variables
-var character= "<XXXX>";
+var character= name;
 var xx = 3;
 var yy = 2;
 // Undefined variable that gets assigned inside of the loop
 var rowString="";
 var whileCondition= true;
+var generator = twoLayeredWorld(Game);
+var currentLevel=0;
 
-
-
-
+console.log(worldDisplay(generator[currentLevel],xx,yy,character));
 
 
 
 // While loop - Will loop until told not to.
 while(whileCondition== true){
 
-    // Reassigning the rowString variable to 0
-    rowString="";
-    //looping the Y axis adding +1 every time up to the total length of the game
-    for(outerLoop=0;outerLoop<Game.length;outerLoop++){
-        //Looping the X axis adding +1 every time up to the total length of the outer loop.
-        for (innerLoop=0;innerLoop<Game[outerLoop].length;innerLoop++){
-            // Conditional to find out where to place the character
-            if (xx == outerLoop && yy == innerLoop){
-                rowString+= character+"\t";
-            } else {
-            // Stringing it all together
-            rowString=rowString+Game[outerLoop] [innerLoop];
-            rowString=rowString+"\t";}
-        }
-        // Adding the break after the string
-        rowString=rowString+"\n";
-        // rowString+="\n"; equals the same as ^
+    console.clear();
+    console.log(worldDisplay(generator[currentLevel],xx,yy,character));
 
-    }
+//    // Reassigning the rowString variable to 0
+//    rowString="";
+//    //looping the Y axis adding +1 every time up to the total length of the game
+//    for(outerLoop=0;outerLoop<Game.length;outerLoop++){
+//        //Looping the X axis adding +1 every time up to the total length of the outer loop.
+//        for (innerLoop=0;innerLoop<Game[outerLoop].length;innerLoop++){
+//            // Conditional to find out where to place the character
+//            if (xx == outerLoop && yy == innerLoop){
+//                rowString+= character+"\t";
+//            } else {
+//            // Stringing it all together
+//            rowString=rowString+Game[outerLoop] [innerLoop];
+//            rowString=rowString+"\t";}
+//        }
+//        // Adding the break after the string
+//        rowString=rowString+"\n";
+//        // rowString+="\n"; equals the same as ^
+//
+//    }
     // clears the console so that the grid doesn't stack on top of itself just replaces the old one.
 
     console.clear();
@@ -68,17 +71,20 @@ while(whileCondition== true){
             } else {
                 if (direction == "right") {
                     yy++;
-                } else {
-                    if(direction == "enter"){
-                        if (Game[xx][yy] == Game[4][7]){
-                            console.clear();
-                            console.log(generateDungeon());
-                            whileCondition=false;
-                    }
-                    } else {
-                    if (direction == "end"){
+//                } else {
+//                    if(direction == "enter"){
+//                        if (Game[xx][yy] == Game[4][1] || Game[xx][yy] == Game[8][2]){
+//                            console.clear();
+//                            console.log(generateDungeon(name));
+//                            whileCondition=false;
+//                    }
+                    } else if ((direction == "end")) {
                         whileCondition = false;
-                    }}}}}}
+                    } else if (generator[currentLevel][xx][yy]== "Dungeon" && direction == "enter"){currentLevel++}
+                    else if (generator[currentLevel][xx][yy]=="Ladder" && direction == "enter"){currentLevel--}
+                    }}}
+
+
 
     // Setting it so if you go off the map it resets you to the other side.
     if (xx>= Game.length){
@@ -91,9 +97,9 @@ while(whileCondition== true){
         yy= Game.length-1;
     }
 
-
-
 }
+
+
 
 
 
@@ -114,3 +120,108 @@ while(whileCondition== true){
 
 
 
+
+
+
+
+
+
+function twoLayeredWorld(Game){
+    var dungeonX1=0;
+    var dungeonX2=0;
+    var dungeonY1=0;
+    var dungeonY2=0;
+    var firstVsSecondDungeonInstance = true;
+    var completedWorld=[];
+    // Whole world in [0]
+    // Dungeon in [1]
+    completedWorld[0]=Game;
+    completedWorld[1]=[];
+    completedWorld[2]=[];
+    completedWorld[3]=[];
+    completedWorld[4]=[];
+    completedWorld[5]=[];
+
+// Finding the dungeons inside of the Game array
+    for (Outer=0; Outer<Game.length; Outer++){
+        for(Inner=0;Inner<Game.length;Inner++){
+            completedWorld[2][Outer][Inner]=makeMonster(completedWorld[0][Outer][Inner], Math.random());
+            if (Game[Outer][Inner]== "Dungeon" && firstVsSecondDungeonInstance == true){
+                dungeonX1=Outer;
+                dungeonY1=Inner;
+                firstVsSecondDungeonInstance = false;
+            } else if (Game[Outer][Inner] == "Dungeon"){
+                dungeonX2=Outer;
+                dungeonY2=Inner;
+            }
+        }
+    }
+    // Generating the dungeon
+    for (Outer2=0;Outer2<Game.length;Outer2++){
+        completedWorld[1][Outer2]=[];
+        completedWorld[2][Outer2]=[];
+        completedWorld[3][Outer2]=[];
+        completedWorld[4][Outer2]=[];
+        completedWorld[5][Outer2]=[];
+
+
+
+        for(Inner2=0;Inner2<Game.length;Inner2++){
+
+
+            var randomWorldSeed=Math.random();
+            // cave 1/3, lava 1/3, dirt 1/3, ladder on dungeon squares
+
+            if ((Outer2==dungeonX1 && Inner2==dungeonY1) || (Outer2==dungeonX2 && Inner2 == dungeonY2)){
+                completedWorld[1][Outer2][Inner2]="Ladder";
+            } else if (randomWorldSeed<= 1/3){
+                completedWorld[1][Outer2][Inner2]="Caves";
+            } else if (randomWorldSeed<=2/3){
+                completedWorld[1][Outer2][Inner2]="Lava";
+            } else {
+                completedWorld[1][Outer2][Inner2]="Dirt";
+            }
+
+        }
+    }
+
+
+
+
+    return completedWorld;
+
+
+}
+
+
+
+
+
+
+function worldDisplay(Game,xx, yy, character){
+
+    rowString="";
+    //looping the Y axis adding +1 every time up to the total length of the game
+    for(outerLoop=0;outerLoop<Game.length;outerLoop++){
+        //Looping the X axis adding +1 every time up to the total length of the outer loop.
+        for (innerLoop=0;innerLoop<Game[outerLoop].length;innerLoop++){
+            // Conditional to find out where to place the character
+            if (xx == outerLoop && yy == innerLoop){
+                rowString+= character+"\t";
+            } else {
+                // Stringing it all together
+                rowString=rowString+Game[outerLoop] [innerLoop];
+                rowString=rowString+"\t";}
+        }
+        // Adding the break after the string
+        rowString=rowString+"\n";
+        // rowString+="\n"; equals the same as ^
+
+    }
+
+
+    return rowString;
+
+}
+
+// Surface, Dungeon, Monster Surface, Monster Dungeon, Treasure Surface, Treasure Dungeon.
