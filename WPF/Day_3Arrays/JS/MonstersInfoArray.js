@@ -9,33 +9,76 @@ var dmg = 3;
 var health= 4;
 
 var troll=0;
-var kobold=1;
+var kobold =1;
 var merman=2;
+var bat = 3;
+var elemental = 4;
+var mudman = 5;
 
-min=0;
-max=1;
+var min=0;
+var max=1;
 
-function Dmg(){
-    damage = "";
-    var maxStat = 15;
-    var minStat= 10;
-    var Str = 0;
-    var stats = [];
 
-    stats[Str] = Math.floor((maxStat - minStat)*Math.random() + minStat);
 
-     damage = Math.floor(stats[Str]*Math.random() + stats[Str]);
+function makeMonster(currentLevel,landType, randomNumber){
 
-    return  damage;
 
+// Takes in land type and a random number and returns a monster. maybe.
+    var trollPercentage=.4;
+    var koboldPercentage= .6;
+    var mermanPercentage= .2;
+    var batPercentage= .6;
+    var elementalPercentage=.2;
+    var mudmanPercentage= .4;
+
+    if (landType == "Forest" && currentLevel == 0 && randomNumber < trollPercentage){
+        return "You have encountered a " + monster[troll][type] + "\n" + "His damage is: " + monster[troll][dmg] +"\n" + "His health is: " + monster[troll][health]+ "\n"}
+    if (landType == "Desert" && currentLevel == 0 && randomNumber < koboldPercentage){
+        return "You have encountered a "+ monster[kobold][type] + "\n"+ "His damage is: " + monster[kobold][dmg] +"\n" + "His health is: " + monster[kobold][health]+ "\n"}
+    if (landType == "water" && currentLevel == 0 && randomNumber < mermanPercentage){
+        return "You have encountered a "+ monster[merman][type] + "\n"+ "His damage is: " + monster[merman][dmg] +"\n" + "His health is: " + monster[merman][health]+ "\n"}
+    if (landType == "Caves" && currentLevel == 1 && randomNumber< batPercentage){
+        return "You have encountered a"+ monster[bat][type]+ "\n"+ "His damage is: "+ monster[bat][dmg] + "\n" + "His health is: " + monster[bat][health]+ "\n"}
+    if (landType == "Lava" && currentLevel == 1 && randomNumber< elementalPercentage){
+        return "You have encountered a"+ monster[elemental][type]+ "\n"+ "His damage is: "+ monster[elemental][dmg] + "\n" + "His health is: " + monster[elemental][health]+ "\n"}
+    if (landType == "Dirt" && currentLevel == 1 && randomNumber< mudmanPercentage){
+        return "You have encountered a"+ monster[mudman][type]+ "\n"+ "His damage is: "+ monster[mudman][dmg] + "\n" + "His health is: " + monster[mudman][health]+ "\n"}
+    else { return "" ;}
 }
 
+
+
+
+
 function MonsterGen(){
+
+    function Dmg(){
+
+
+        var maxStat = 15;
+        var minStat= 10;
+        var Str = 0;
+        var stats = [];
+
+        stats[Str] = Math.floor((maxStat - minStat)*Math.random() + minStat);
+
+        damage = Math.floor(stats[Str]*Math.random() + stats[Str]);
+        return damage;
+
+    }
+    
+
+
+
+
 monster = [];
 
 monster[troll]=[];
 monster[kobold]=[];
 monster[merman]=[];
+monster[bat]=[];
+monster[elemental]=[];
+monster[mudman]=[];
 
 monster[troll] = [type];
 monster[troll] = [exp] ;
@@ -54,6 +97,24 @@ monster[merman] = [exp] ;
 monster[merman] = [gold];
 monster[merman] = [dmg];
 monster[merman] = [health];
+
+monster[bat] = [type];
+monster[bat] = [exp] ;
+monster[bat] = [gold];
+monster[bat] = [dmg];
+monster[bat] = [health];
+
+monster[elemental] = [type];
+monster[elemental] = [exp] ;
+monster[elemental] = [gold];
+monster[elemental] = [dmg];
+monster[elemental] = [health];
+
+monster[mudman] = [type];
+monster[mudman] = [exp] ;
+monster[mudman] = [gold];
+monster[mudman] = [dmg];
+monster[mudman] = [health];
 
 // Troll
 
@@ -96,5 +157,53 @@ monster[merman][gold]=[max];
 
 monster[merman][gold][min]= 3;
 monster[merman][gold][max]= 20;
+
+
+  // Dungeon Monsters
+// Bat
+    monster[bat][type]="Bat";
+    monster[bat][exp]=5;
+    monster[bat][gold]=[];
+    monster[bat][dmg]= Dmg();
+    monster[bat][health]= 40;
+
+    monster[bat][gold]=[min];
+    monster[bat][gold]=[max];
+
+    monster[bat][gold][min]= 2;
+    monster[bat][gold][max]= 5;
+    
+// Elemental
+
+    monster[elemental][type]="Elemental";
+    monster[elemental][exp]=25;
+    monster[elemental][gold]=[];
+    monster[elemental][dmg]= Dmg();
+    monster[elemental][health]= 225;
+
+    monster[elemental][gold]=[min];
+    monster[elemental][gold]=[max];
+
+    monster[elemental][gold][min]= 20;
+    monster[elemental][gold][max]= 40;
+
+// Mudman
+
+    monster[mudman][type]="Mudman";
+    monster[mudman][exp]=15;
+    monster[mudman][gold]=[];
+    monster[mudman][dmg]= Dmg();
+    monster[mudman][health]= 175;
+
+    monster[mudman][gold]=[min];
+    monster[mudman][gold]=[max];
+
+    monster[mudman][gold][min]= 7;
+    monster[mudman][gold][max]= 24;
+
+
+
+
+
 
 }

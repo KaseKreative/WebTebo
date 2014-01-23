@@ -8,8 +8,8 @@ var yy = 2;
 // Undefined variable that gets assigned inside of the loop
 var rowString="";
 var whileCondition= true;
-var generator = twoLayeredWorld(Game);
 var currentLevel=0;
+var generator = twoLayeredWorld(Game);
 
 console.log(worldDisplay(generator[currentLevel],xx,yy,character));
 
@@ -49,7 +49,7 @@ while(whileCondition== true){
     console.log(rowString);
 
     // This is recognizing if there is a monster on the square you land.
-    console.log (makeMonster(Game[xx][yy],Math.random()));
+//    console.log (makeMonster(currentLevel,Game,Math.random()));
 
     // Characters Stats
     console.log(characterStats);
@@ -145,7 +145,12 @@ function twoLayeredWorld(Game){
 // Finding the dungeons inside of the Game array
     for (Outer=0; Outer<Game.length; Outer++){
         for(Inner=0;Inner<Game.length;Inner++){
-            completedWorld[2][Outer][Inner]=makeMonster(completedWorld[0][Outer][Inner], Math.random());
+
+                completedWorld[2][Outer][Inner]=makeMonster(completedWorld[0][Outer][Inner], Math.random());
+                completedWorld[3][Outer][Inner]=makeMonster(completedWorld[1][Outer][Inner], Math.random());
+
+
+
             if (Game[Outer][Inner]== "Dungeon" && firstVsSecondDungeonInstance == true){
                 dungeonX1=Outer;
                 dungeonY1=Inner;
