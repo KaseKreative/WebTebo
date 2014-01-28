@@ -35,66 +35,10 @@ return playersTeam ;
 console.log("Your team consists of a "+ Team(PlayersTeam));
 
 var mission = prompt("Cave, Dungeon or Castle");
-type = 0;
-health = 1;
-damage = 2;
-dexterity = 3;
-strength = 4;
-
-bear = 0;
-bat = 1;
-yeti = 2;
-skeleton = 3;
-raccoon = 4;
-mudman = 5;
-
-cave = [];
-cave[bear] = [];
-cave[bat] = [];
-cave[yeti] = [];
-cave[skeleton] = [];
-cave[raccoon] = [];
-cave[mudman] = [];
 
 
 
 
-skeleton = 0;
-orc = 1;
-blob = 2;
-skeletonArcher = 3;
-zombie = 4;
-beholder = 5;
-
-dungeon = [];
-dungeon[skeleton] = [];
-dungeon[orc] = [];
-dungeon[blob] = [];
-dungeon[skeletonArcher] = [];
-dungeon[zombie] = [];
-dungeon[beholder] = [];
-
-
-
-
-
-
-
-
-orc = 0;
-skeleton = 1;
-ghost = 2;
-dragon = 3;
-knight = 4;
-king = 5;
-
-castle = [];
-castle[orc] = [];
-castle[skeleton] = [];
-castle[ghost] = [];
-castle[dragon] = [];
-castle[knight] = [];
-castle[king] = [];
 
 function fightGeneration(mission ,dungeon, castle, cave){
 
