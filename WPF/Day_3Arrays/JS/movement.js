@@ -12,7 +12,7 @@ var currentLevel=0;
 var generator = twoLayeredWorld(Game);
 
 console.log(worldDisplay(generator[currentLevel],xx,yy,character));
-
+// Function to make monsters (monster, worldDisplay(generator[currentLevel],xx,yy,character)
 
 
 // While loop - Will loop until told not to.
@@ -49,7 +49,6 @@ while(whileCondition== true){
     console.log(rowString);
 
     // This is recognizing if there is a monster on the square you land.
-//    console.log (makeMonster(currentLevel,Game,Math.random()));
 
     // Characters Stats
     console.log(characterStats);
@@ -145,12 +144,6 @@ function twoLayeredWorld(Game){
 // Finding the dungeons inside of the Game array
     for (Outer=0; Outer<Game.length; Outer++){
         for(Inner=0;Inner<Game.length;Inner++){
-
-                completedWorld[2][Outer][Inner]=makeMonster(completedWorld[0][Outer][Inner], Math.random());
-                completedWorld[3][Outer][Inner]=makeMonster(completedWorld[1][Outer][Inner], Math.random());
-
-
-
             if (Game[Outer][Inner]== "Dungeon" && firstVsSecondDungeonInstance == true){
                 dungeonX1=Outer;
                 dungeonY1=Inner;
@@ -163,11 +156,11 @@ function twoLayeredWorld(Game){
     }
     // Generating the dungeon
     for (Outer2=0;Outer2<Game.length;Outer2++){
-        completedWorld[1][Outer2]=[];
-        completedWorld[2][Outer2]=[];
-        completedWorld[3][Outer2]=[];
-        completedWorld[4][Outer2]=[];
-        completedWorld[5][Outer2]=[];
+        completedWorld[1][Outer2]=[];   // Dungeon
+        completedWorld[2][Outer2]=[];   // Monsters for level 0
+        completedWorld[3][Outer2]=[];   // Monsters for level 1
+        completedWorld[4][Outer2]=[];   // Treasure for level 0
+        completedWorld[5][Outer2]=[];   // Treasure for level 1
 
 
 
@@ -181,7 +174,7 @@ function twoLayeredWorld(Game){
                 completedWorld[1][Outer2][Inner2]="Ladder";
             } else if (randomWorldSeed<= 1/3){
                 completedWorld[1][Outer2][Inner2]="Caves";
-            } else if (randomWorldSeed<=2/3){
+            } else if (randomWorldSeed>=2/3){
                 completedWorld[1][Outer2][Inner2]="Lava";
             } else {
                 completedWorld[1][Outer2][Inner2]="Dirt";
@@ -197,6 +190,21 @@ function twoLayeredWorld(Game){
 
 
 }
+
+
+
+for (Outer3 = 0; Outer3<Game.length;)
+if ( currentLevel = 0 ) {
+      generator[2][Outer3][Inner3]=makeMonster(generator[0][Outer3][Inner3], Math.random());
+    console.log(generator[2][])
+} else if ( currentLevel = 1 ) {
+      generator[3][Outer3][Inner3]=makeDungeonMonster(generator[1][Outer3][Inner3], Math.random());
+}
+
+
+
+
+
 
 
 
