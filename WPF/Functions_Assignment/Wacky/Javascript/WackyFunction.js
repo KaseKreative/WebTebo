@@ -92,7 +92,9 @@ castle = [];
 castle[orc] = [];
 castle[skeleton] = [];
 castle[ghost] = [];
-
+castle[dragon] = [];
+castle[knight] = [];
+castle[king] = [];
 
 function fightGeneration(mission ,dungeon, castle, cave){
 
