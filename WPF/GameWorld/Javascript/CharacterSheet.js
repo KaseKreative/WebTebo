@@ -110,8 +110,7 @@ if (characterClass == "mage"){
 
 
 
-// 1 2 3 / 4 5 / 6 7 / 8 9 / 10 11 / 12 13 / 14 15 / 16 17 / 18
-//  -4     -3    -2    -1     +0      +1      +2      +3     +4
+
 
 // Start of Combat
 // Initiative roll 1 - 20 + Dexterity(Who ever's is higher goes first)
@@ -197,3 +196,26 @@ if (characterClass == "mage"){
 //}
 
 // Either Death or Experience Sequence
+
+
+var player =    [
+             Math.floor(5*Math.random())+Math.floor(5*Math.random())+Math.floor(5*Math.random())+3,
+             Math.floor(5*Math.random())+Math.floor(5*Math.random())+Math.floor(5*Math.random())+3,
+             Math.floor(5*Math.random())+Math.floor(5*Math.random())+Math.floor(5*Math.random())+3,
+             Math.floor(5*Math.random())+Math.floor(5*Math.random())+Math.floor(5*Math.random())+3,
+             Math.floor(5*Math.random())+Math.floor(5*Math.random())+Math.floor(5*Math.random())+3,
+             Math.floor(5*Math.random())+Math.floor(5*Math.random())+Math.floor(5*Math.random())+3,
+        0,
+        0,
+        0,
+        Math.floor(10*Math.random())+10,
+        10,
+        0,
+        0,
+        [1,6]
+];
+
+//function statModifier(statvalue){
+//    // 1 2 3 / 4 5 / 6 7 / 8 9 / 10 11 / 12 13 / 14 15 / 16 17 / 18
+////  -4     -3    -2    -1     +0      +1      +2      +3     +4
+//}

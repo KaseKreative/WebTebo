@@ -8,12 +8,27 @@ var PlayersTeam= "";
 var mission = prompt("Cave, Dungeon or Castle").toLowerCase();
 
 function Team(playersTeam){
-var whileCounter = 1;
+var whileCounter = 0;
 
-    while (whileCounter <= 3){
+    while (whileCounter < 3){
     whileCounter++;
 
+
+
     var Team= prompt("Who do you want on your team? (One at a time) \n" + "Mage, Rogue, Fighter, Priest, Ranger").toLowerCase();
+
+
+
+        if (whileCounter==1){
+        player1= Team;
+    } else if (whileCounter==2){
+        player2=Team;
+    } else {
+        player3=Team;
+    }
+
+
+
 
     if (Team == "mage"){
         playersTeam+= "Mage, ";
@@ -30,11 +45,115 @@ var whileCounter = 1;
     }
 
     }
-return playersTeam ;
+
+
+
+
+
+
+
+    function statGenerator (player1,player2,player3){
+        var Player1 = "";
+        var Player2 = "";
+        var Player3 = "";
+
+        if (player1=="mage"){Player1 ="\n"+"Mage: "+ characterSheet(player1)+"\n"}
+        if (player1=="fighter"){ Player1 ="\n"+"Fighter: "+characterSheet(player1)+"\n"}
+        if (player1=="rogue"){ Player1 ="\n"+"Rogue: "+ characterSheet(player1)+"\n"}
+        if (player1=="priest"){ Player1 ="\n"+"Priest: "+ characterSheet(player1)+"\n"}
+        if(player1=="ranger"){ Player1 ="\n"+"Ranger: "+ characterSheet(player1)+"\n"}
+
+        if (player2=="mage"){ Player2 = "Mage: "+ characterSheet(player2)+"\n"}
+        if (player2=="fighter"){ Player2 ="Fighter: "+ characterSheet(player2)+"\n"}
+        if (player2=="rogue"){ Player2 ="Rogue: "+ characterSheet(player2)+"\n"}
+        if (player2=="priest"){ Player2 = "Priest: "+ characterSheet(player2)+"\n"}
+        if (player2=="ranger"){ Player2 ="Ranger: "+ characterSheet(player2)+"\n"}
+
+        if (player3=="mage"){ Player3 = "Mage: "+ characterSheet(player3)+"\n"}
+        if (player3=="fighter"){ Player3 = "Fighter: "+ characterSheet(player3)+"\n"}
+        if (player3=="rogue"){ Player3 ="Rogue: "+ characterSheet(player3)+"\n"}
+        if (player3=="priest"){ Player3 = "Priest: "+ characterSheet(player3)+"\n"}
+        if(player3=="ranger"){ Player3 = "Ranger: "+ characterSheet(player3)+"\n"}
+
+        function characterSheet(player){
+
+            Str = Math.round(3*(Math.random()*6));
+            Dex = Math.round(3*(Math.random()*6));
+            Dmg = Math.round(3*(Math.random()*6))+Str;
+            currentMana = 100;
+            totalMana= 100;
+            Mana = currentMana+"/"+totalMana;
+            var stats = "\n"+
+                "Str: "+Str+"\n"+
+                "Dex: "+Dex+"\n"+
+                "Damage: "+ Dmg+"\n";
+
+            if (player == "mage" || player == "priest"){stats += "Mana: "+ Mana+"\n"}
+
+
+            return stats;
+
+        }
+
+        return Player1 + Player2 + Player3
+    }
+
+
+
+//    return playersTeam
+
+    return playersTeam + statGenerator(player1,player2,player3);
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
+
 console.log("Your team consists of a "+ Team(PlayersTeam));
+console.log();
 console.log(mission+":");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 function caveMonsters(cave){

@@ -11,17 +11,30 @@ strength = 4;
 
 
 function str (){
+
    Str =  Math.floor(3*(Math.random()*6));
+    while (Str == 0){
+        Str =  Math.floor(3*(Math.random()*6));
+    }
     return Str;
 }
 
 function dex (){
+
     Dex = Math.floor(3*(Math.random()*6));
+        while (Dex == 0){
+            Dex =  Math.floor(3*(Math.random()*6));
+        }
     return Dex;
 }
 
 function dmg (str){
+
     Dmg = Math.floor((Math.random()*6) + str);
+        while (Dmg == 0){
+            Dmg = Math.floor((Math.random()*6) + str);
+        }
+
     return Dmg;
 }
 
@@ -269,5 +282,3 @@ castle[king]  [damage] = dmg(str());
 castle[king]  [dexterity] = dex();
 castle[king]  [strength] = str();
 
-
-console.log(castle[king][damage]);
