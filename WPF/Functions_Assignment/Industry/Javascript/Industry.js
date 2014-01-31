@@ -89,7 +89,7 @@ console.log(time(what, simpleOrComplex));
 
 var passOrFail = prompt("Did I pass or fail?");
 
-    if (passOrFail)
+    if (passOrFail == "pass")
 
 
 
