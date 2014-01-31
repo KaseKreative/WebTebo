@@ -3,5 +3,7 @@
  */
 console.log("What are you trying to program?");
 var what =prompt ("Game, Software, Plugin");
+var simpleOrComplex = prompt("Simple or Complex?");
+
 
 
