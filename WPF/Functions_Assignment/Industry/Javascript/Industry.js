@@ -15,7 +15,9 @@ function time (what, simpleOrComplex){
             return "I am not sure how long a game takes to program probably a while"
     } else if (what == "software" && simpleOrComplex == "simple"){
             return "A simple software can take anywhere from an hour to a week";
-    } else if (what == "software" && simpleOrComplex == "complex"){}
+    } else if (what == "software" && simpleOrComplex == "complex"){
+            return "A complex software can take up to months or years"
+    } else if (what == "Plugin"){}
 
 
 }
