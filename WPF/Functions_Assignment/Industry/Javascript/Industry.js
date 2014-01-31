@@ -90,7 +90,9 @@ console.log(time(what, simpleOrComplex));
 var passOrFail = prompt("Did I pass or fail?");
 
     if (passOrFail == "pass"){
-        cosole.log("");
+        cosole.log("Yayy!");
+    } else {
+        console.log(":(");
     }
 
 
