@@ -1,0 +1,19 @@
+body {
+	font-family: Tahoma;
+	background-color: #b9ebf1;
+}
+
+h1 {
+	color: #B24D00;
+}
+
+a {
+	text-decoration: none;
+	font-style: italic;
+	color: #FF6D00;
+	
+}
+
+a:hover {
+	color: purple;
+}
