@@ -1,0 +1,28 @@
+
+/*  colors from adobe kuler */
+body {
+background-color: #CE5FFF;
+font-family: Arial, Tahoma;
+}
+
+ol {
+ background-color: rgba(129, 107, 255, 0.5);
+}
+
+ol h2 {
+color: white;
+}
+
+/* h2 and h3 colors from - http://meyerweb.com/eric/css/colors/ */
+h2, h3 {
+background-color: hsla(195,53.3%,79%, 0.5);
+}
+
+h1 {
+text-align: center;
+}
+
+p {
+text-align: center;
+}
+

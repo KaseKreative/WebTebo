@@ -1,0 +1,4 @@
+KaseKreative.github.io/WebTebo/DWS1/tebo-kase-applyingCSS/inline.html
+KaseKreative.github.io/WebTebo/DWS1/tebo-kase-applyingCSS/embedded.html
+KaseKreative.github.io/WebTebo/DWS1/tebo-kase-applyingCSS/external.html
+KaseKreative.github.io/WebTebo/DWS1/tebo-kase-applyingCSS/stylesheet.css
