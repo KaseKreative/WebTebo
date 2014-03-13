@@ -1,0 +1,2 @@
+http://kasekreative.github.io/WebTebo/DWS1/tebo-kase-boxmodel/tebo-kase-stylingtext.html
+http://kasekreative.github.io/WebTebo/DWS1/tebo-kase-boxmodel/css/stylesheet.css
