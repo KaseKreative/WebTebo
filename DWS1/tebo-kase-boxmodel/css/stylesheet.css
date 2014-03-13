@@ -1,0 +1,111 @@
+
+/*  colors from adobe kuler */
+body {
+background-color: #CE5FFF;
+font-family: Arial, Tahoma;
+line-height: 20px;
+word-spacing: 5px;
+}
+
+ol {
+ background-color: rgba(129, 107, 255, 0.5);
+ width: 50%;
+ margin: 0 auto;
+ list-style:none;
+ border-radius: 20px;
+ box-shadow: 4px 4px 4px 4px black;
+}
+
+ol h2 {
+color: white;
+}
+
+/* h2 and h3 colors from - http://meyerweb.com/eric/css/colors/ */
+h2, h3 {
+background-color: hsla(195,53.3%,79%, 0.5);
+text-shadow: 2px 2px black;
+text-align:center;
+box-shadow: 2px 2px 2px 2px black;
+}
+
+h1 {
+text-shadow: 2px 2px white;
+text-align: center;
+width: 50%;
+margin: 0 auto;
+}
+
+p {
+text-align: center;
+font-size: 14px;
+}
+
+a {
+text-decoration: none;
+}
+
+a:visited{
+color: black;
+}
+
+a:hover {
+font-weight: bold;
+}
+
+a:active {
+color: white;
+}
+
+#links {
+	list-style: none;
+	border: 2px black solid;
+	padding: 10px;
+	width: 250px;
+}
+
+#linkhead {
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h3{
+text-shadow: 2px 2px white;
+}
+
+.body {
+width:50%;
+margin: 0 auto;
+}
+
+.bottom {
+margin: auto;
+list-style:none;
+
+}
+
+#div1 {
+width: 50%; 
+margin: 0 auto;
+}
+
+#div1 h2 {
+color: white;
+text-shadow: 2px 2px black;
+text-align:center;
+box-shadow: 2px 2px 2px 2px black;
+
+}
+
+#top {
+width: 50%;
+margin: auto;
+word-spacing: normal;
+list-style: none;
+text-align:center;
+
+}
+
+ #top li {
+display: inline;
+} 
