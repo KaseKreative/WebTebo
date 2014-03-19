@@ -3,7 +3,10 @@ width: 960px;
 font-size: 1em;
 line-height: 1.5em;
 font-family: arial;
-background-color: #CE5FFF;
+background-image:url('../images/background.jpg');
+background-repeat: no-repeat;
+background-size: 100%;
+background-attachment: fixed; 
 margin: 0 auto;
 }
 
@@ -84,7 +87,11 @@ padding-left: 40px;
 .Sidebar{
 width:25%;
 float:left;
-margin-left: 20px
+margin-left: 50px;
+border-radius: 20px;
+background-color: hsla(195,53.3%,79%, 0.2);
+box-shadow: 0px 0px 8px 2px black;
+padding-right: 10px;
 }
 
 .MainBar{
