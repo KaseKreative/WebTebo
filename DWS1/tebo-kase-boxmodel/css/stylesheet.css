@@ -5,9 +5,14 @@ background-color: #CE5FFF;
 font-family: Arial, Tahoma;
 line-height: 20px;
 word-spacing: 5px;
+font-size: 1em;
 }
 
-ol {
+#content {
+width: 90%;
+}
+
+ol {             
  background-color: rgba(129, 107, 255, 0.5);
  width: 50%;
  margin: 0 auto;
@@ -37,7 +42,7 @@ margin: 0 auto;
 
 p {
 text-align: center;
-font-size: 14px;
+font-size: 0.875em;
 }
 
 a {
@@ -60,11 +65,13 @@ color: white;
 	list-style: none;
 	border: 2px black solid;
 	padding: 10px;
-	width: 250px;
+	width: 20%;
+	float: left;
+	margin: 5px;
 }
 
 #linkhead {
-	font-size: 20px;
+	font-size: 1.250em;
 	font-weight: bold;
 	text-transform: uppercase;
 }
@@ -109,3 +116,9 @@ text-align:center;
  #top li {
 display: inline;
 } 
+
+#otherLinks {
+float: right;
+list-style: none;
+line-height: 2.0em;
+}

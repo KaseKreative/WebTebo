@@ -1,0 +1,79 @@
+body {
+font-family: Verdana;
+width:90%;
+}
+
+#page {
+margin: 0 auto;
+}
+
+#logo {
+width: 303px;
+margin: 0 auto;
+border: 2px solid black;
+}
+
+ul#navigation {
+list-style:none;
+padding-left:0;
+text-align:center;
+}
+
+#navigation li {
+display: inline;
+margin; 5px;
+border: 2px solid black;
+}
+
+
+#content {
+width: 50%
+margin: auto;
+border: 2px solid black;
+}
+
+h1 {
+font-size: 1.5em;
+}
+
+h2 {
+font-size: 1.3em;
+}
+
+h3 {
+font-size: 1.25;
+}
+
+#content img {
+	float:left;
+	margin: 20px;
+}
+
+#column1of2 #column2of2 {
+width: 280px;
+display: inline-block;
+
+}
+
+#column1of2 {
+float: left;
+margin: 5px;
+border: 2px solid black;
+}
+
+#column2of2 {
+float: right;
+margin: 5px;
+border: 2px solid black;
+}
+
+.clear {
+clear: both;
+}
+
+#contactinfo {
+	list-style: none;
+	border: 2px solid black;
+	width: 25%;
+	margin: 5px
+}

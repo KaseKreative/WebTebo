@@ -1,0 +1,94 @@
+body {
+width: 960px;
+font-size: 1em;
+line-height: 1.5em;
+font-family: arial;
+background-color: #CE5FFF;
+margin: 0 auto;
+}
+
+#page {
+background-color: rgba(129, 107, 255, 0.5);
+border-radius: 20px;
+padding: 10px;
+margin: 15px;
+box-shadow: 4px 4px 4px 4px black;
+}
+
+#title {
+	margin: 10px;
+	text-align:center;
+	text-shadow: 2px 2px white;
+}
+
+#links {
+list-style: none;
+}
+
+#moreLinks {
+margin-top: 5em;
+list-style: none;
+}
+
+.moreLinks {
+line-height: 2em;
+}
+
+a:hover {
+font-weight: bold;
+color: white;
+}
+
+a:active {
+	color: red;
+}
+
+a:visited{
+	color:hsla(195,53.3%,79%, 0.5);
+}
+
+ul {
+list-style: none;
+}
+
+.headers {
+text-align: center;
+text-shadow: 2px 2px white;
+background-color: hsla(195,53.3%,79%, 0.5);
+}
+
+.bottom {
+width: 45%;
+margin-right: 20px;
+float:left;
+}
+
+.botMenu {
+display:inline;
+
+}
+
+#botUl {
+text-align: center;
+}
+
+.clear {
+clear: both;
+}
+
+#Description{
+padding-left: 40px;
+}
+
+
+.Sidebar{
+width:25%;
+float:left;
+margin-left: 20px
+}
+
+.MainBar{
+width:60%;
+float:right;
+margin-right: 20px;
+}
