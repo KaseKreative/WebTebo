@@ -1,0 +1,127 @@
+body {
+width: 960px;
+font-size: 1em;
+line-height: 1.5em;
+font-family: arial;
+background-image:url('../images/background.jpg');
+background-repeat: no-repeat;
+background-size: 100%;
+background-attachment: fixed; 
+margin: 0 auto;
+}
+
+#page {
+background-color: rgba(129, 107, 255, 0.5);
+background-position: center;
+background: linear-gradient(to bottom, #6be52d 0%,#1d9b23 50%,#1c351c 100%), url(../images/Eye.png);
+border-radius: 20px;
+padding: 10px;
+margin: 15px;
+box-shadow: 4px 4px 4px 4px black;
+
+}
+
+#title {
+	margin: 10px;
+	text-align:center;
+	text-shadow: 2px 2px white;
+}
+
+p {
+background: url(../images/EyeWhite.png) no-repeat;
+background-position: center;
+
+
+}
+
+#links {
+list-style: none;
+
+}
+
+
+
+#moreLinks {
+margin-top: 5em;
+list-style: none;
+}
+
+.moreLinks {
+line-height: 2em;
+}
+
+a {
+padding-left: 30px;
+background: url(../images/EyeClosed2.png);
+background-repeat: no-repeat;
+background-position: left;
+}
+
+a:hover {
+font-weight: bold;
+color: white;
+padding-left: 30px;
+background: url(../images/Eye.png);
+background-repeat: no-repeat;
+background-position: left;
+
+}
+
+a:active {
+	color: red;
+}
+
+a:visited{
+	color:#660099;
+}
+
+ul {
+list-style: none;
+}
+
+.headers {
+text-align: center;
+text-shadow: 2px 2px white;
+background-color: #660099;
+border-radius: 20px;
+}
+
+.bottom {
+width: 45%;
+margin-right: 20px;
+float:left;
+}
+
+.botMenu {
+display:inline;
+
+}
+
+#botUl {
+text-align: center;
+}
+
+.clear {
+clear: both;
+}
+
+#Description{
+padding-left: 40px;
+}
+
+
+.Sidebar{
+width:25%;
+float:left;
+margin-left: 50px;
+border-radius: 20px;
+background-color: hsla(195,53.3%,79%, 0.2);
+box-shadow: 0px 0px 8px 2px black;
+padding-right: 10px;
+}
+
+.MainBar{
+width:60%;
+float:right;
+margin-right: 20px;
+}
