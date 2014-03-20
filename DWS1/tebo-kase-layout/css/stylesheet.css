@@ -12,10 +12,13 @@ margin: 0 auto;
 
 #page {
 background-color: rgba(129, 107, 255, 0.5);
+background-position: center;
+background: linear-gradient(to bottom, #6be52d 0%,#1d9b23 50%,#1c351c 100%), url(../images/Eye.png);
 border-radius: 20px;
 padding: 10px;
 margin: 15px;
 box-shadow: 4px 4px 4px 4px black;
+
 }
 
 #title {
@@ -24,9 +27,19 @@ box-shadow: 4px 4px 4px 4px black;
 	text-shadow: 2px 2px white;
 }
 
+p {
+background: url(../images/EyeWhite.png) no-repeat;
+background-position: center;
+
+
+}
+
 #links {
 list-style: none;
+
 }
+
+
 
 #moreLinks {
 margin-top: 5em;
@@ -37,9 +50,21 @@ list-style: none;
 line-height: 2em;
 }
 
+a {
+padding-left: 30px;
+background: url(../images/EyeClosed2.png);
+background-repeat: no-repeat;
+background-position: left;
+}
+
 a:hover {
 font-weight: bold;
 color: white;
+padding-left: 30px;
+background: url(../images/Eye.png);
+background-repeat: no-repeat;
+background-position: left;
+
 }
 
 a:active {
@@ -47,7 +72,7 @@ a:active {
 }
 
 a:visited{
-	color:hsla(195,53.3%,79%, 0.5);
+	color:#660099;
 }
 
 ul {
@@ -57,7 +82,8 @@ list-style: none;
 .headers {
 text-align: center;
 text-shadow: 2px 2px white;
-background-color: hsla(195,53.3%,79%, 0.5);
+background-color: #660099;
+border-radius: 20px;
 }
 
 .bottom {
