@@ -1,0 +1,3 @@
+KaseKreative.github.io/WebTebo/DWS1/tebo-kase-final/tebo-kase-final.html
+KaseKreative.github.io/WebTebo/DWS1/tebo-kase-final/css/stylesheet.css
+https://github.com/KaseKreative/WebTebo/tree/gh-pages
